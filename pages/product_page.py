@@ -14,7 +14,7 @@ class ProductPage(BasePage):
     def should_be_correct_product_name(self):
         added_to_basket_text = self.browser.find_element(*ProductPageLocators.ADDED_TO_BASKET_TEXT)
         product_name = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME)
-        assert product_name.text in added_to_basket_text.text, "wrong product added to basket"
+        assert product_name.text == added_to_basket_text.text, "wrong product added to basket"
 
     def product_price_same_in_basket(self):
         product_price = self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE)
