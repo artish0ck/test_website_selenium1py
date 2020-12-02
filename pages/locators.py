@@ -15,3 +15,4 @@ class ProductPageLocators():
     ADDED_TO_BASKET_TEXT = (By.CSS_SELECTOR, ".alertinner strong")
     PRODUCT_NAME = (By.CSS_SELECTOR, ".product_main :first-child")
     BASKET_TOTAL = (By.CSS_SELECTOR, ".alertinner p strong")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "div.alert:first-child")
