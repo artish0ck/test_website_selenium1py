@@ -17,8 +17,6 @@ class LoginPageLocators():
     REGISTER_FORM_PASSWORD_INPUT_CONFIRM = (By.CSS_SELECTOR, "#id_registration-password2")
     REGISTER_BUTTON = (By.CSS_SELECTOR, "button[name=registration_submit]")
 
-
-
 class ProductPageLocators():
     BASKET_BUTTON = (By.CSS_SELECTOR, ".btn-add-to-basket")
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main .price_color")

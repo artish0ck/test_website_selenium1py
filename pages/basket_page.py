@@ -9,4 +9,3 @@ class BasketPage(BasePage):
     def is_basket_empty_message(self, message):
         basket_empty_message = self.browser.find_element(*BasketPageLocators.BASKET_EMPTY_MESSAGE)
         assert message in basket_empty_message.text, "no message 'basket is empty'"
-

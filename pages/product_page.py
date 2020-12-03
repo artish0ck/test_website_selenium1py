@@ -28,3 +28,4 @@ class ProductPage(BasePage):
     def should_dissapear_success_message(self):
       assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
        "Success message is presented, but should dissappear"
+       
